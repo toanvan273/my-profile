@@ -2,12 +2,20 @@ import Link from "next/link";
 import { useRouter } from "next/dist/client/router";
 import Image from "next/image";
 import logo from "../statics/img/logo.png";
+import { useState } from "react";
+
+const keyLang = {
+    vi: "Tiếng Việt",
+    en: "English"
+};
+
 export default function Header(props) {
     const router = useRouter();
-    // console.log('Header',props, router)
 
+    const [lang, setLang] = useState(router.locale);
+    let path = router.pathname;
     const changeLang = (lang) => {
-        let path = router.pathname;
+        setLang(lang);
         router.push(path, path, { locale: lang });
     };
     return (
@@ -80,7 +88,7 @@ export default function Header(props) {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                Language
+                                {keyLang[lang]}
                             </a>
                             <ul
                                 className="dropdown-menu"
@@ -91,7 +99,7 @@ export default function Header(props) {
                                         changeLang("vi");
                                     }}
                                 >
-                                    <a className="dropdown-item">Viet Nam</a>
+                                    <a className="dropdown-item">Tiếng Việt</a>
                                 </li>
 
                                 <li
@@ -100,22 +108,6 @@ export default function Header(props) {
                                     }}
                                 >
                                     <a className="dropdown-item">English</a>
-                                </li>
-
-                                {/* <li
-                                    onClick={() => {
-                                        changeLang("jp");
-                                    }}
-                                >
-                                    <a className="dropdown-item">Japan</a>
-                                </li> */}
-                                <li>
-                                    <hr className="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a className="dropdown-item">
-                                        Something else here
-                                    </a>
                                 </li>
                             </ul>
                         </li>
