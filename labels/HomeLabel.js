@@ -1,4 +1,6 @@
-export const homeLabel = (lang) => {};
+export const homeLabel = (lang) => {
+    return keyMap[lang];
+};
 
 const keyMap = {
     en: {

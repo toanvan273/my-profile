@@ -12,6 +12,9 @@ import icon4 from "../statics/img/icon-4.png";
 
 import bgwrap1 from "../statics/img/bgwrap-1.png";
 import bgwrap2 from "../statics/img/bgwrap-2.png";
+import { homeLabel } from "../labels/HomeLabel";
+
+import { useRouter } from "next/dist/client/router";
 
 const Bound = styled.div`
     .session-5 {
@@ -22,7 +25,10 @@ const Bound = styled.div`
         }
     }
 `;
-export default function Home() {
+export default function Home(props) {
+    const router = useRouter();
+    const { locale } = router;
+    console.log(homeLabel(locale));
     return (
         <Bound>
             <Head>
@@ -35,27 +41,19 @@ export default function Home() {
             </Head>
             <div className="session-1 mt-2">
                 <div className="container">
-                    <h1>
-                        Insight is an independent Consulting Firm based in
-                        Milan, Hamburg and Chicago.
-                    </h1>
-                    <p>
-                        Egestas nulla ac efficitur eleifend. Quisque fringilla
-                        semper, liberohendrerit convallis, magna augue vulputate
-                        nibh ucibus enim eros eget arcu scelerisque. Maecenas
-                        semper sapien sit amet tortor.
-                    </p>
+                    <h1>{homeLabel(locale).Introduce.title}</h1>
+                    <p>{homeLabel(locale).Introduce.content}</p>
                     <div
                         className="btn-group gap-2"
                         role="group"
                         aria-label="Basic example"
                     >
                         <button type="button" className="btn btn-primary">
-                            Left
+                            {homeLabel(locale).Introduce.btnBook}
                         </button>
 
-                        <button type="button" class="btn btn-primary">
-                            Right
+                        <button type="button" className="btn btn-primary">
+                            {homeLabel(locale).Introduce.btnExplore}
                         </button>
                     </div>
                 </div>
@@ -65,15 +63,15 @@ export default function Home() {
                 <div className="container-fluid">
                     <div
                         id="carouselExampleCaptions"
-                        class="carousel slide"
+                        className="carousel slide"
                         data-bs-ride="carousel"
                     >
-                        <div class="carousel-indicators">
+                        <div className="carousel-indicators">
                             <button
                                 type="button"
                                 data-bs-target="#carouselExampleCaptions"
                                 data-bs-slide-to="0"
-                                class="active"
+                                className="active"
                                 aria-current="true"
                                 aria-label="Slide 1"
                             ></button>
@@ -98,11 +96,9 @@ export default function Home() {
                                     className="d-block w-100"
                                 />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>
-                                        Some representative placeholder content
-                                        for the first slide.
-                                    </p>
+                                    <h5>{homeLabel(locale).Slide1.title}</h5>
+                                    <p>{homeLabel(locale).Slide1.p_1}</p>
+                                    <p>{homeLabel(locale).Slide1.p_2}</p>
                                 </div>
                             </div>
                             <div className="carousel-item">
@@ -113,11 +109,9 @@ export default function Home() {
                                 />
 
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>
-                                        Some representative placeholder content
-                                        for the second slide.
-                                    </p>
+                                    <h5>{homeLabel(locale).Slide2.title}</h5>
+                                    <p>{homeLabel(locale).Slide2.p_1}</p>
+                                    <p>{homeLabel(locale).Slide2.p_2}</p>
                                 </div>
                             </div>
                             <div className="carousel-item">
@@ -128,11 +122,9 @@ export default function Home() {
                                 />
 
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>
-                                        Some representative placeholder content
-                                        for the third slide.
-                                    </p>
+                                    <h5>{homeLabel(locale).Slide3.title}</h5>
+                                    <p>{homeLabel(locale).Slide3.p_1}</p>
+                                    <p>{homeLabel(locale).Slide3.p_2}</p>
                                 </div>
                             </div>
                         </div>
@@ -168,12 +160,9 @@ export default function Home() {
                 <div className="container">
                     <div className="title-wrap">
                         <div className="sub-heading">
-                            <span>OUR SERVICES.</span>
+                            <span>{homeLabel(locale).OurService.title}</span>
                         </div>
-                        <h2>
-                            15+ years of experience in Financial Services &
-                            Business.
-                        </h2>
+                        <h2>{homeLabel(locale).OurService.content}</h2>
                     </div>
                 </div>
             </div>
@@ -252,9 +241,9 @@ export default function Home() {
                             />
                         </div>
                         <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <div class="features-content">
-                                <div class="module-title-wrap">
-                                    <div class="sub-heading text-light">
+                            <div className="features-content">
+                                <div className="module-title-wrap">
+                                    <div className="sub-heading text-light">
                                         <span>Our Philosophy.</span>
                                     </div>
                                     <h2>
@@ -270,10 +259,10 @@ export default function Home() {
                                     gravida, ultricies laoreet porttitor.{" "}
                                 </p>
 
-                                <div class="features-action">
+                                <div className="features-action">
                                     <a href="#" title="Purchase Insight Now">
                                         Purchase Insight Now
-                                        <span class="ion-android-arrow-forward"></span>
+                                        <span className="ion-android-arrow-forward"></span>
                                     </a>
                                     ––
                                 </div>
@@ -283,9 +272,9 @@ export default function Home() {
 
                     <div className="row">
                         <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <div class="features-content">
-                                <div class="module-title-wrap">
-                                    <div class="sub-heading text-light">
+                            <div className="features-content">
+                                <div className="module-title-wrap">
+                                    <div className="sub-heading text-light">
                                         <span>Our Philosophy.</span>
                                     </div>
                                     <h2>
@@ -301,10 +290,10 @@ export default function Home() {
                                     gravida, ultricies laoreet porttitor.{" "}
                                 </p>
 
-                                <div class="features-action">
+                                <div className="features-action">
                                     <a href="#" title="Purchase Insight Now">
                                         Purchase Insight Now
-                                        <span class="ion-android-arrow-forward"></span>
+                                        <span className="ion-android-arrow-forward"></span>
                                     </a>
                                     ––
                                 </div>

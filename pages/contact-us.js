@@ -10,17 +10,19 @@ const Bound = styled.div`
     }
 `;
 function ContactUs() {
-    const myMap = () => {
-        var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.12085),
-            zoom: 5
-        };
-        var map = new google.maps.Map(
-            document.getElementById("googleMap"),
-            mapProp
-        );
-    };
-    // useEffect(() => {}, []);
+    // const myMap = () => {
+    //     var mapProp = {
+    //         center: new google.maps.LatLng(51.508742, -0.12085),
+    //         zoom: 5
+    //     };
+    //     var map = new google.maps.Map(
+    //         document.getElementById("googleMap"),
+    //         mapProp
+    //     );
+    // };
+    // useEffect(() => {
+    //     myMap();
+    // }, []);
     return (
         <Bound id="contactPage">
             <div className="container">

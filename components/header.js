@@ -8,14 +8,13 @@ export default function Header(props) {
 
     const changeLang = (lang) => {
         let path = router.pathname;
-        // console.log(path, lang)
         router.push(path, path, { locale: lang });
     };
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <Link href="/">
-                    <a className="navbar-brand" href="/">
+                    <a className="navbar-brand">
                         <Image
                             src={logo}
                             alt="img1"
@@ -50,16 +49,7 @@ export default function Header(props) {
                                 </a>
                             </Link>
                         </li>
-                        {/* <li className="nav-item">
-                            <Link href="/about">
-                                <a
-                                    className="nav-link active"
-                                    aria-current="page"
-                                >
-                                    About
-                                </a>
-                            </Link>
-                        </li> */}
+
                         <li className="nav-item">
                             <Link href="/what-we-do">
                                 <a
@@ -70,11 +60,7 @@ export default function Header(props) {
                                 </a>
                             </Link>
                         </li>
-                        {/* <li className="nav-item">
-                <Link href="/our-blog">
-                  <a className="nav-link active" aria-current="page" >Our Blog</a>
-                  </Link>
-              </li> */}
+
                         <li className="nav-item">
                             <Link href="/contact-us">
                                 <a
@@ -102,25 +88,27 @@ export default function Header(props) {
                             >
                                 <li
                                     onClick={() => {
-                                        changeLang("en");
-                                    }}
-                                >
-                                    <a className="dropdown-item">English</a>
-                                </li>
-                                <li
-                                    onClick={() => {
                                         changeLang("vi");
                                     }}
                                 >
                                     <a className="dropdown-item">Viet Nam</a>
                                 </li>
+
                                 <li
+                                    onClick={() => {
+                                        changeLang("en");
+                                    }}
+                                >
+                                    <a className="dropdown-item">English</a>
+                                </li>
+
+                                {/* <li
                                     onClick={() => {
                                         changeLang("jp");
                                     }}
                                 >
                                     <a className="dropdown-item">Japan</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
