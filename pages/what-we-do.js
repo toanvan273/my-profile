@@ -1,25 +1,25 @@
 function WhatWeDo() {
     return (
-        <div class="bonus-page">
+        <div className="bonus-page">
             <h1>
                 Capital, Advisory,
                 <br />
                 Property &amp; Ventures
             </h1>
 
-            <div class="videoWrapper">
+            <div className="videoWrapper">
                 <iframe
                     width="560"
                     height="315"
                     src="https://www.youtube.com/embed/FqUW7bQuQuw"
-                    frameborder="0"
+                    // frameborder="0"
                     allow="autoplay; encrypted-media"
-                    allowfullscreen=""
+                    // allowfullscreen=""
                 ></iframe>
             </div>
 
-            <div class="row">
-                <div class="col-sm-4">
+            <div className="row">
+                <div className="col-sm-4">
                     <p>
                         In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
                         justo. Nullam dictum felis eu pede mollis pretium.
@@ -31,7 +31,7 @@ function WhatWeDo() {
                     </p>
                 </div>
 
-                <div class="col-sm-4">
+                <div className="col-sm-4">
                     <p>
                         Nullam dictum felis eu pede mollis pretium. In enim
                         justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
@@ -43,7 +43,7 @@ function WhatWeDo() {
                     </p>
                 </div>
 
-                <div class="col-sm-4">
+                <div className="col-sm-4">
                     <p>
                         Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
                         tellus. In enim justo, rhoncus ut, imperdiet a,
@@ -56,15 +56,15 @@ function WhatWeDo() {
                 </div>
             </div>
             <hr />
-            <div class="row">
-                <div class="col-sm-7">
-                    <img
+            <div className="row">
+                <div className="col-sm-7">
+                    {/* <img
                         src="/images/joomlart/others/typo-1.jpg"
                         alt="Capital"
-                    />
+                    /> */}
                 </div>
 
-                <div class="col-sm-5">
+                <div className="col-sm-5">
                     <h2>Capital</h2>
                     <p>
                         Cras dapibus. Vivamus elementum semper nisi. Aenean
@@ -74,15 +74,15 @@ function WhatWeDo() {
                 </div>
             </div>
             <hr />
-            <div class="row">
-                <div class="col-sm-7 pull-right">
+            <div className="row">
+                <div className="col-sm-7 pull-right">
                     <img
                         src="/images/joomlart/others/typo-2.jpg"
                         alt="Capital"
                     />
                 </div>
 
-                <div class="col-sm-5 pull-left">
+                <div className="col-sm-5 pull-left">
                     <h2>Advisory</h2>
                     <p>
                         Cras dapibus. Vivamus elementum semper nisi. Aenean
@@ -92,15 +92,15 @@ function WhatWeDo() {
                 </div>
             </div>
             <hr />
-            <div class="row">
-                <div class="col-sm-7">
+            <div className="row">
+                <div className="col-sm-7">
                     <img
                         src="/images/joomlart/others/typo-3.jpg"
                         alt="Property"
                     />
                 </div>
 
-                <div class="col-sm-5">
+                <div className="col-sm-5">
                     <h2>Property</h2>
                     <p>
                         Cras dapibus. Vivamus elementum semper nisi. Aenean
@@ -110,15 +110,15 @@ function WhatWeDo() {
                 </div>
             </div>
             <hr />
-            <div class="row">
-                <div class="col-sm-7 pull-right">
+            <div className="row">
+                <div className="col-sm-7 pull-right">
                     <img
                         src="/images/joomlart/others/typo-4.jpg"
                         alt="Ventures"
                     />
                 </div>
 
-                <div class="col-sm-5 pull-left">
+                <div className="col-sm-5 pull-left">
                     <h2>Ventures</h2>
                     <p>
                         Cras dapibus. Vivamus elementum semper nisi. Aenean

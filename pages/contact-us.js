@@ -1,5 +1,14 @@
 import React, { useEffect } from "react";
+import styled from "styled-components";
 
+const Bound = styled.div`
+    .contact-session {
+        .context {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+`;
 function ContactUs() {
     const myMap = () => {
         var mapProp = {
@@ -13,7 +22,7 @@ function ContactUs() {
     };
     // useEffect(() => {}, []);
     return (
-        <div id="contactPage">
+        <Bound id="contactPage">
             <div className="container">
                 <h1>Contact Us</h1>
                 <div className="google-map">
@@ -21,8 +30,6 @@ function ContactUs() {
                         id="googleMap"
                         style={{ width: "100%", height: "400px" }}
                     ></div>
-
-                    {/* <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> */}
                 </div>
             </div>
             <div className="contact-session">
@@ -37,17 +44,23 @@ function ContactUs() {
                                 </p>
                                 <div className="form-group">
                                     <div className="col-sm-6">
-                                        <label>Name</label>
-                                        <input type="text"></input>
+                                        <div className="context">
+                                            <label>Name</label>
+                                            <input type="text"></input>
+                                        </div>
                                     </div>
                                     <div className="col-sm-6">
-                                        <label>Email</label>
-                                        <input type="text"></input>
+                                        <div className="context">
+                                            <label>Email</label>
+                                            <input type="text"></input>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="form-group">
-                                    <label>Subject</label>
-                                    <input type="text"></input>
+                                    <div className="context">
+                                        <label>Subject</label>
+                                        <input type="text"></input>
+                                    </div>
                                 </div>
                                 <div className="form-group">
                                     <label>Message</label>
@@ -89,7 +102,7 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-        </div>
+        </Bound>
     );
 }
 
