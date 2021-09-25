@@ -177,11 +177,9 @@ export default function Home(props) {
                             <div className="img-icon">
                                 <Image src={icon1} alt="icon1" />
                             </div>
-                            <h4>Corporate Management</h4>
+                            <h4>{homeLabel(locale).OurServiceBock1.title}</h4>
                             <p>
-                                In hac habitasse platea dictumst dapibus eros ac
-                                leo blandit, ligula sit amet posuere turpis
-                                lementum at eu mattis.
+                                {homeLabel(locale).OurServiceBock1.p_1}
                             </p>
                         </div>
                         <div

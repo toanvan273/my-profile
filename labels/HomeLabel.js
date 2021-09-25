@@ -29,6 +29,10 @@ const keyMap = {
         OurService: {
             title: "Our Services",
             content: "10+ years of experience in Insurance business"
+        },
+        OurServiceBock1: {
+            title: "Health Insurance",
+            p_1: "People have complex health status and demand. You want a reasonable plan to cover you? Or you want to be covered in one of your pre-existing condition? We are here to help"
         }
     },
     vi: {
@@ -57,6 +61,10 @@ const keyMap = {
         OurService: {
             title: "Dịch vụ",
             content: "10+ năm kinh nghiệm trong thị trường bảo hiểm"
+        },
+        OurServiceBock1: {
+            title: "Bảo hiểm sức khoẻ",
+            p_1: "Mỗi người đều có những tình trạng sức khoẻ khác nhau và nhu cầu khác nhau. Bạn muốn có một gói bảo hiểm sức khoẻ với giá hợp lý? Hay bạn muốn được bảo vệ cho một tình trạng có sẵn nào đó? Chúng tôi ở đây để giúp đỡ bạn"
         }
     }
 };
