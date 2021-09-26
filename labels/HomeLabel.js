@@ -30,10 +30,42 @@ const keyMap = {
             title: "Our Services",
             content: "10+ years of experience in Insurance business"
         },
-        OurServiceBock1: {
+        OurServiceBlock1: {
             title: "Health Insurance",
             p_1: "People have complex health status and demand. You want a reasonable plan to cover you? Or you want to be covered in one of your pre-existing condition? We are here to help"
+        },
+        OurServiceBlock2: {
+            title: "Employee Benefit",
+            p_1: "Your firm wants to collect the best quote from different insurance companies but get struggle from the complexity of insurance plan? We are here to help you collecting quotes, preparing the comparison and presentation for you"
+            
+        },
+
+        OurServiceBlock3: {
+            title: "Home Insurance",
+            p_1: "You want your home to be protected from the unforseen risks? Home insurance is the best way to do that. At a very low cost, you get peace of mind"
+        },
+
+        OurServiceBlock4: {
+            title: "Property Insurance",
+            p_1: "Your factory needs Property insurance to protect from risk? Or to obey the local regulation: Decree 23/2018, Circular 22/2016 about Compulsory Fire and Explosion Insurance and other complex law and regulation? We can assist you."
+        },
+
+        OurServiceBlock5: {
+            title: "Liability Insurance",
+            p_1: "You don't want to be sued and paid a lot by your neighbors/ adjecent factories by because some of your action affects their property or affects their health? But you don't want to be strangled by a lot of insurance policies terms and conditions you don't understand? You can go with us."
+        },
+
+        OurServiceBlock6: {
+            title: "Financial Advisors",
+            p_1: "You have a newborn child and you want to start saving for your child's university time and also want to prevent risks possibly happen to you that affect your child's future? Or you want to retire fund after 20 years? "
+        },
+
+        OurPhilosophy: {
+            p_1: "p1",
+            p_2: "p2"
         }
+
+
     },
     vi: {
         Slide1: {
@@ -62,9 +94,36 @@ const keyMap = {
             title: "Dịch vụ",
             content: "10+ năm kinh nghiệm trong thị trường bảo hiểm"
         },
-        OurServiceBock1: {
+        OurServiceBlock1: {
             title: "Bảo hiểm sức khoẻ",
             p_1: "Mỗi người đều có những tình trạng sức khoẻ khác nhau và nhu cầu khác nhau. Bạn muốn có một gói bảo hiểm sức khoẻ với giá hợp lý? Hay bạn muốn được bảo vệ cho một tình trạng có sẵn nào đó? Chúng tôi ở đây để giúp đỡ bạn"
+        },
+
+        OurServiceBlock2: {
+            title: "Phúc lợi nhân viên",
+            p_1: "Công ty của bạn muốn lấy được một bản chào tốt nhất từ nhiều công ty bảo hiểm khác nhau nhưng gặp khó khăn trong việc đọc các điều kiện điều khoản bảo hiểm. Chúng tôi có thể giúp đỡ bạn thu thập các bản chào, chuẩn bị so sánh và tóm tắt/ present cho bạn"
+        },
+
+        OurServiceBlock3: {
+            title: "Bảo hiểm nhà",
+            p_1: "Bạn muốn bảo vệ ngôi nhà của bạn cho những rủi ro không lường trước? Bảo hiểm nhà là điều dễ dàng nhất bạn có thể làm ở mức phí hết sức dễ chịu, bạn sẽ có được sự an tâm cần thiết"
+        },
+
+        OurServiceBlock4: {
+            title: "Bảo hiểm tài sản",
+            p_1: "Nhà máy của bạn cần có bảo hiểm để bảo vệ các rủi ro và bạn cũng muốn tuân thủ các quy định pháp luật phức tạp: Nghị định 23/2018/BTC hay Thông tư 22/2016 về bảo hiểm cháy nổ bắt buộc? Chúng tôi có thể giúp đỡ bạn"
+        },
+
+        OurServiceBlock5: {
+            title: "Bảo hiểm trách nhiệm",
+            p_1: "Bạn không muốn phải bỏ tiền ra để chịu trách nhiệm hoặc đứng trước nguy cơ kiện tụng của hàng xóm hay nhà máy xong quanh vì những hành động của bạn vô tình làm ảnh hưởng tới tài sản hay sức khoẻ của họ? Nhưng bạn cũng không muốn mất thời gian nghiên cứu các gói bảo hiểm phức tạp, bạn có thể nhờ chúng tôi trợ giúp"
+        },
+
+        OurServiceBlock6: {
+            title: "Tư vấn tài chính",
+            p_1: "Bạn có một thành viên mới trong gia đình và muốn bắt đầu tích luỹ để con mình học đại học cũng như ngăn ngừa rủi ro không may xảy tới với mình làm ảnh hưởng tới tương lai của con? Hay bạn muốn có một quỹ hưu trí sau 20 năm? "
         }
+
     }
+
 };

@@ -177,9 +177,9 @@ export default function Home(props) {
                             <div className="img-icon">
                                 <Image src={icon1} alt="icon1" />
                             </div>
-                            <h4>{homeLabel(locale).OurServiceBock1.title}</h4>
+                            <h4>{homeLabel(locale).OurServiceBlock1.title}</h4>
                             <p>
-                                {homeLabel(locale).OurServiceBock1.p_1}
+                                {homeLabel(locale).OurServiceBlock1.p_1}
                             </p>
                         </div>
                         <div
@@ -189,11 +189,9 @@ export default function Home(props) {
                             <div className="img-icon">
                                 <Image src={icon2} alt="icon2" />
                             </div>
-                            <h4>Legal Solutions</h4>
+                            <h4>{homeLabel(locale).OurServiceBlock2.title}</h4>
                             <p>
-                                Donec eget est quis metus ligula enenatis
-                                interdum vitae condi mentum sem, condi mentum
-                                ortor estibum laoreet sem.
+                                {homeLabel(locale).OurServiceBlock2.p_1}
                             </p>
                         </div>
                         <div
@@ -203,11 +201,9 @@ export default function Home(props) {
                             <div className="img-icon">
                                 <Image src={icon3} alt="icon2" />
                             </div>
-                            <h4>Legal Solutions</h4>
+                            <h4>{homeLabel(locale).OurServiceBlock3.title}</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, ectetur adipiscing
-                                elit. Suspendisse pulvinar commodo tellus, vitae
-                                pellentesque augue euismod non.
+                                {homeLabel(locale).OurServiceBlock3.p_1}
                             </p>
                         </div>
                         <div
@@ -217,11 +213,35 @@ export default function Home(props) {
                             <div className="img-icon">
                                 <Image src={icon4} alt="icon2" />
                             </div>
-                            <h4>Legal Solutions</h4>
+                            <h4>{homeLabel(locale).OurServiceBlock4.title}</h4>
                             <p>
-                                Proin lacinia commodo orci, quis leo dignissim
-                                ac. Nulla nec, nec dolo malesuada eros mauris id
-                                lectus ante iverra pharetra.
+                                {homeLabel(locale).OurServiceBlock4.p_1}
+                            </p>
+                        </div>
+
+                        <div
+                            className="col-sm-6 col-md-3"
+                            style={{ minHeight: "344px" }}
+                        >
+                            <div className="img-icon">
+                                <Image src={icon4} alt="icon2" />
+                            </div>
+                            <h4>{homeLabel(locale).OurServiceBlock5.title}</h4>
+                            <p>
+                                {homeLabel(locale).OurServiceBlock5.p_1}
+                            </p>
+                        </div>
+
+                        <div
+                            className="col-sm-6 col-md-3"
+                            style={{ minHeight: "344px" }}
+                        >
+                            <div className="img-icon">
+                                <Image src={icon4} alt="icon2" />
+                            </div>
+                            <h4>{homeLabel(locale).OurServiceBlock6.title}</h4>
+                            <p>
+                                {homeLabel(locale).OurServiceBlock6.p_1}
                             </p>
                         </div>
                     </div>
