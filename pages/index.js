@@ -178,9 +178,7 @@ export default function Home(props) {
                                 <Image src={icon1} alt="icon1" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock1.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock1.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock1.p_1}</p>
                         </div>
                         <div
                             className="col-sm-6 col-md-3"
@@ -190,9 +188,7 @@ export default function Home(props) {
                                 <Image src={icon2} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock2.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock2.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock2.p_1}</p>
                         </div>
                         <div
                             className="col-sm-6 col-md-3"
@@ -202,9 +198,7 @@ export default function Home(props) {
                                 <Image src={icon3} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock3.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock3.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock3.p_1}</p>
                         </div>
                         <div
                             className="col-sm-6 col-md-3"
@@ -214,9 +208,7 @@ export default function Home(props) {
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock4.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock4.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock4.p_1}</p>
                         </div>
 
                         <div
@@ -227,9 +219,7 @@ export default function Home(props) {
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock5.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock5.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock5.p_1}</p>
                         </div>
 
                         <div
@@ -240,92 +230,21 @@ export default function Home(props) {
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock6.title}</h4>
-                            <p>
-                                {homeLabel(locale).OurServiceBlock6.p_1}
-                            </p>
+                            <p>{homeLabel(locale).OurServiceBlock6.p_1}</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="session-5 mt-3">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <Image
-                                src={bgwrap1}
-                                alt="img1"
-                                className="d-block w-100"
-                            />
-                        </div>
-                        <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <div className="features-content">
-                                <div className="module-title-wrap">
-                                    <div className="sub-heading text-light">
-                                        <span>Our Philosophy.</span>
-                                    </div>
-                                    <h2>
-                                        Insight is your best Business &amp;
-                                        Finance Company.{" "}
-                                    </h2>
-                                </div>
-
-                                <p>
-                                    Etiam id commodo nulla. Quisque fringilla
-                                    dapibus magna, at imperdiet arcu consequat
-                                    bitae. Praesent eleifend nisi euismod turpis
-                                    gravida, ultricies laoreet porttitor.{" "}
-                                </p>
-
-                                <div className="features-action">
-                                    <a href="#" title="Purchase Insight Now">
-                                        Purchase Insight Now
-                                        <span className="ion-android-arrow-forward"></span>
-                                    </a>
-                                    ––
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <div className="features-content">
-                                <div className="module-title-wrap">
-                                    <div className="sub-heading text-light">
-                                        <span>Our Philosophy.</span>
-                                    </div>
-                                    <h2>
-                                        Insight is your best Business &amp;
-                                        Finance Company.{" "}
-                                    </h2>
-                                </div>
-
-                                <p>
-                                    Etiam id commodo nulla. Quisque fringilla
-                                    dapibus magna, at imperdiet arcu consequat
-                                    bitae. Praesent eleifend nisi euismod turpis
-                                    gravida, ultricies laoreet porttitor.{" "}
-                                </p>
-
-                                <div className="features-action">
-                                    <a href="#" title="Purchase Insight Now">
-                                        Purchase Insight Now
-                                        <span className="ion-android-arrow-forward"></span>
-                                    </a>
-                                    ––
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-12 col-xs-12 col-md-6 p-0">
-                            <Image
-                                src={bgwrap1}
-                                alt="img1"
-                                className="d-block w-100"
-                            />
-                        </div>
-                    </div>
+                <div className="container-fluid" style={{ height: "1945px" }}>
+                    <iframe
+                        src="https://outlook.office365.com/owa/calendar/MinhHoInsuranceBroker@minhhobroker.com/bookings/"
+                        width="100%"
+                        height="100%"
+                        scrolling="yes"
+                        style={{ border: 0 }}
+                    ></iframe>
                 </div>
             </div>
         </Bound>
