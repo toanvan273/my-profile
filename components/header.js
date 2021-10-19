@@ -2,13 +2,27 @@ import Link from "next/link";
 import { useRouter } from "next/dist/client/router";
 import Image from "next/image";
 import logo from "../statics/img/logo.png";
+import en from "../statics/img/nen.png";
+import vi from "../statics/img/nvi.png";
 import { useState } from "react";
+import { headerLabel } from "../labels/HeaderLabel";
+import styled from "styled-components";
 
 const keyLang = {
     vi: "Tiếng Việt",
     en: "English"
 };
-
+const LangStyle = styled.li`
+    .block {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background: #f1f1f1;
+        }
+    }
+`;
 export default function Header(props) {
     const router = useRouter();
 
@@ -18,6 +32,7 @@ export default function Header(props) {
         setLang(lang);
         router.push(path, path, { locale: lang });
     };
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
@@ -53,7 +68,7 @@ export default function Header(props) {
                                     className="nav-link active"
                                     aria-current="page"
                                 >
-                                    Home
+                                    {headerLabel(lang).home}
                                 </a>
                             </Link>
                         </li>
@@ -64,7 +79,7 @@ export default function Header(props) {
                                     className="nav-link active"
                                     aria-current="page"
                                 >
-                                    What we do
+                                    {headerLabel(lang).whatwedo}
                                 </a>
                             </Link>
                         </li>
@@ -75,11 +90,11 @@ export default function Header(props) {
                                     className="nav-link active"
                                     aria-current="page"
                                 >
-                                    Contact us
+                                    {headerLabel(lang).contact}
                                 </a>
                             </Link>
                         </li>
-                        <li className="nav-item dropdown">
+                        <LangStyle className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
                                 href="#"
@@ -88,7 +103,12 @@ export default function Header(props) {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                {keyLang[lang]}
+                                <Image
+                                    src={lang === "vi" ? vi : en}
+                                    alt="img1"
+                                    width={18}
+                                    height={18}
+                                />
                             </a>
                             <ul
                                 className="dropdown-menu"
@@ -99,7 +119,17 @@ export default function Header(props) {
                                         changeLang("vi");
                                     }}
                                 >
-                                    <a className="dropdown-item">Tiếng Việt</a>
+                                    <div className="block">
+                                        <Image
+                                            src={vi}
+                                            alt="img1"
+                                            width={18}
+                                            height={18}
+                                        />
+                                        <span className="dropdown ms-2">
+                                            Tiếng Việt
+                                        </span>
+                                    </div>
                                 </li>
 
                                 <li
@@ -107,12 +137,22 @@ export default function Header(props) {
                                         changeLang("en");
                                     }}
                                 >
-                                    <a className="dropdown-item">English</a>
+                                    <div className="block">
+                                        <Image
+                                            src={en}
+                                            alt="img1"
+                                            width={18}
+                                            height={18}
+                                        />
+                                        <span className="dropdown ms-2">
+                                            English
+                                        </span>
+                                    </div>
                                 </li>
                             </ul>
-                        </li>
+                        </LangStyle>
                     </ul>
-                    <form className="d-flex">
+                    {/* <form className="d-flex">
                         <input
                             className="form-control me-2"
                             type="search"
@@ -125,7 +165,7 @@ export default function Header(props) {
                         >
                             Search
                         </button>
-                    </form>
+                    </form> */}
                 </div>
             </div>
         </nav>
