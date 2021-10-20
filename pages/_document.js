@@ -21,6 +21,10 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+                        rel="stylesheet"
+                    />
                     <title>My page</title>
                     {/* Step 5: import thẻ style vào head của html server trả về  */}
                     {this.props.styleTags}

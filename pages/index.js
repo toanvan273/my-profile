@@ -60,7 +60,7 @@ export default function Home(props) {
             </div>
 
             <div className="session-2 mt-3">
-                <div className="container-fluid">
+                <div className="container">
                     <div
                         id="carouselExampleCaptions"
                         className="carousel slide"
@@ -174,7 +174,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon text-center">
                                 <Image src={icon1} alt="icon1" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock1.title}</h4>
@@ -184,7 +184,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon text-center">
                                 <Image src={icon2} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock2.title}</h4>
@@ -194,7 +194,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon  text-center">
                                 <Image src={icon3} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock3.title}</h4>
@@ -204,7 +204,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon text-center">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock4.title}</h4>
@@ -215,7 +215,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon  text-center">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock5.title}</h4>
@@ -226,7 +226,7 @@ export default function Home(props) {
                             className="col-sm-6 col-md-3"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon">
+                            <div className="img-icon text-center">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock6.title}</h4>
