@@ -7,12 +7,16 @@ import vi from "../statics/img/nvi.png";
 import { useState } from "react";
 import { headerLabel } from "../labels/HeaderLabel";
 import styled from "styled-components";
-
+import english from "../statics/img/english.svg";
+import vietnam from "../statics/img/vietnam.svg";
 const keyLang = {
     vi: "Tiếng Việt",
     en: "English"
 };
 const LangStyle = styled.li`
+    li {
+        padding-left: 7px;
+    }
     .block {
         padding: 0 15px;
         display: flex;
@@ -35,7 +39,7 @@ export default function Header(props) {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container">
                 <Link href="/">
                     <a className="navbar-brand">
                         <Image
@@ -73,7 +77,7 @@ export default function Header(props) {
                             </Link>
                         </li>
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link href="/what-we-do">
                                 <a
                                     className="nav-link active"
@@ -93,7 +97,7 @@ export default function Header(props) {
                                     {headerLabel(lang).contact}
                                 </a>
                             </Link>
-                        </li>
+                        </li> */}
                         <LangStyle className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle"
@@ -104,7 +108,7 @@ export default function Header(props) {
                                 aria-expanded="false"
                             >
                                 <Image
-                                    src={lang === "vi" ? vi : en}
+                                    src={lang === "vi" ? vietnam : english}
                                     alt="img1"
                                     width={18}
                                     height={18}
@@ -121,7 +125,7 @@ export default function Header(props) {
                                 >
                                     <div className="block">
                                         <Image
-                                            src={vi}
+                                            src={vietnam}
                                             alt="img1"
                                             width={18}
                                             height={18}
@@ -139,7 +143,7 @@ export default function Header(props) {
                                 >
                                     <div className="block">
                                         <Image
-                                            src={en}
+                                            src={english}
                                             alt="img1"
                                             width={18}
                                             height={18}

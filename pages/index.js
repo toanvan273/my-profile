@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
+// import OwlCarousel from "react-owl-carousel";
+
 import img1 from "../statics/img/item-1.jpg";
 import img2 from "../statics/img/item-2.jpg";
 import img3 from "../statics/img/item-3.jpg";
@@ -10,6 +12,10 @@ import icon2 from "../statics/img/icon-2.png";
 import icon3 from "../statics/img/icon-3.png";
 import icon4 from "../statics/img/icon-4.png";
 
+// import body_bg from "../statics/img/body-bg.png";
+// import OwlCarousel from "react-owl-carousel";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 import bgwrap1 from "../statics/img/bgwrap-1.png";
 import bgwrap2 from "../statics/img/bgwrap-2.png";
 import { homeLabel } from "../labels/HomeLabel";
@@ -17,11 +23,57 @@ import { homeLabel } from "../labels/HomeLabel";
 import { useRouter } from "next/dist/client/router";
 
 const Bound = styled.div`
+    .main-title-index {
+        font-weight: 300;
+    }
     .session-5 {
         .features-content {
             background: #132e5e;
             color: #fff;
             height: 100%;
+        }
+    }
+    .btn-book {
+        color: #ffffff;
+        background-color: #132e5e;
+        border-color: #132e5e;
+        border-radius: 0;
+        padding: 24px 30px;
+        cursor: pointer;
+        &:hover {
+            background-color: #000000;
+            border-color: #000000;
+            color: #fff;
+        }
+    }
+    .btn-explose {
+        color: #aa8844;
+        background-color: #f8f8f8;
+        border-color: #f8f8f8;
+        border-radius: 0;
+        padding: 24px 30px;
+        cursor: pointer;
+        &:hover {
+            color: #aa8844;
+            background-color: #dfdfdf;
+            border-color: #d9d9d9;
+        }
+    }
+    .carousel-caption {
+        color: #fff;
+        background: #132e5e;
+        top: 5%;
+        right: 5%;
+        left: unset;
+        text-align: unset;
+        height: 85%;
+        width: 42%;
+        padding: 30px 34px;
+        h5 {
+            color: #888888;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
     }
 `;
@@ -41,26 +93,35 @@ export default function Home(props) {
             </Head>
             <div className="session-1 mt-2">
                 <div className="container">
-                    <h1>{homeLabel(locale).Introduce.title}</h1>
+                    <h1 className="main-title-index">
+                        {homeLabel(locale).Introduce.title}
+                    </h1>
                     <p>{homeLabel(locale).Introduce.content}</p>
                     <div
                         className="btn-group gap-2"
                         role="group"
                         aria-label="Basic example"
                     >
-                        <button type="button" className="btn btn-primary">
-                            {homeLabel(locale).Introduce.btnBook}
-                        </button>
-
-                        <button type="button" className="btn btn-primary">
-                            {homeLabel(locale).Introduce.btnExplore}
-                        </button>
+                        <a
+                            href="https://outlook.office365.com/owa/calendar/MinhHoInsuranceBroker@minhhobroker.com/bookings/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button type="button" className="btn btn-book">
+                                {homeLabel(locale).Introduce.btnBook}
+                            </button>
+                        </a>
+                        <a href="#my-experiend">
+                            <button type="button" className="btn btn-explose">
+                                {homeLabel(locale).Introduce.btnExplore}
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div className="session-2 mt-3">
-                <div className="container">
+                <div className="container-fluid">
                     <div
                         id="carouselExampleCaptions"
                         className="carousel slide"
@@ -156,7 +217,7 @@ export default function Home(props) {
                 </div>
             </div>
 
-            <div className="session-3 mt-3">
+            <div className="session-3 mt-3" id="my-experiend">
                 <div className="container">
                     <div className="title-wrap">
                         <div className="sub-heading">
@@ -233,18 +294,6 @@ export default function Home(props) {
                             <p>{homeLabel(locale).OurServiceBlock6.p_1}</p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="session-5 mt-3">
-                <div className="container-fluid" style={{ height: "1945px" }}>
-                    <iframe
-                        src="https://outlook.office365.com/owa/calendar/MinhHoInsuranceBroker@minhhobroker.com/bookings/"
-                        width="100%"
-                        height="100%"
-                        scrolling="yes"
-                        style={{ border: 0 }}
-                    ></iframe>
                 </div>
             </div>
         </Bound>
