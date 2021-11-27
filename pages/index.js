@@ -16,8 +16,8 @@ import icon4 from "../statics/img/icon-4.png";
 // import OwlCarousel from "react-owl-carousel";
 // import "owl.carousel/dist/assets/owl.carousel.css";
 // import "owl.carousel/dist/assets/owl.theme.default.css";
-import bgwrap1 from "../statics/img/bgwrap-1.png";
-import bgwrap2 from "../statics/img/bgwrap-2.png";
+// import bgwrap1 from "../statics/img/bgwrap-1.png";
+// import bgwrap2 from "../statics/img/bgwrap-2.png";
 import { homeLabel } from "../labels/HomeLabel";
 
 import { useRouter } from "next/dist/client/router";
@@ -25,6 +25,19 @@ import { useRouter } from "next/dist/client/router";
 const Bound = styled.div`
     .main-title-index {
         font-weight: 300;
+    }
+    .session-4 {
+        .experience {
+            h4 {
+                color: #132e5e;
+                font-weight: 400;
+                margin-top: 8px;
+            }
+            p {
+                color: #555555;
+                letter-spacing: 0.03rem;
+            }
+        }
     }
     .session-5 {
         .features-content {
@@ -232,40 +245,40 @@ export default function Home(props) {
                 <div className="container">
                     <div className="row">
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon text-center">
+                            <div className="img-icon">
                                 <Image src={icon1} alt="icon1" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock1.title}</h4>
                             <p>{homeLabel(locale).OurServiceBlock1.p_1}</p>
                         </div>
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon text-center">
+                            <div className="img-icon">
                                 <Image src={icon2} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock2.title}</h4>
                             <p>{homeLabel(locale).OurServiceBlock2.p_1}</p>
                         </div>
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon  text-center">
+                            <div className="img-iconr">
                                 <Image src={icon3} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock3.title}</h4>
                             <p>{homeLabel(locale).OurServiceBlock3.p_1}</p>
                         </div>
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon text-center">
+                            <div className="img-icon">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock4.title}</h4>
@@ -273,10 +286,10 @@ export default function Home(props) {
                         </div>
 
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon  text-center">
+                            <div className="img-iconr">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock5.title}</h4>
@@ -284,10 +297,10 @@ export default function Home(props) {
                         </div>
 
                         <div
-                            className="col-sm-6 col-md-3"
+                            className="col-sm-6 col-md-3 experience"
                             style={{ minHeight: "344px" }}
                         >
-                            <div className="img-icon text-center">
+                            <div className="img-icon">
                                 <Image src={icon4} alt="icon2" />
                             </div>
                             <h4>{homeLabel(locale).OurServiceBlock6.title}</h4>

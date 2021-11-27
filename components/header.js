@@ -14,8 +14,8 @@ const keyLang = {
     en: "English"
 };
 const LangStyle = styled.li`
-    li {
-        padding-left: 7px;
+    .lang {
+        padding-left: 4px;
     }
     .block {
         padding: 0 15px;
@@ -119,6 +119,7 @@ export default function Header(props) {
                                 aria-labelledby="navbarDropdown"
                             >
                                 <li
+                                    className="lang"
                                     onClick={() => {
                                         changeLang("vi");
                                     }}
@@ -137,6 +138,7 @@ export default function Header(props) {
                                 </li>
 
                                 <li
+                                    className="lang"
                                     onClick={() => {
                                         changeLang("en");
                                     }}
