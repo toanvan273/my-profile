@@ -6,8 +6,8 @@ function Footer() {
             <div className="container">
                 <div className="row d-flex">
                     <p className="mb-0">
-                        COPYRIGHT © 2021 JOOMLART DEMO SITE. ALL RIGHTS
-                        RESERVED. DESIGNED BY JOOMLART.COM.
+                        Copyright © 2016 Minh Ho Broker. All Rights 
+                        Reserved. Designed by MH & TVT
                     </p>
                 </div>
             </div>
